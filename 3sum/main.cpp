@@ -93,7 +93,7 @@ bool bin_search(std::vector<int>& nums, int p, int m, int i, int j, int targ) {
     return result;
 }
 
-std::vector< std::vector<int> > threeSum(std::vector<int>& nums) {
+std::vector< std::vector<int> > three_sum(std::vector<int>& nums) {
     std::vector< std::vector<int> > all_triplets;
     std::map<std::string, bool> dup_check;
     std::vector<int> arr;
@@ -191,7 +191,7 @@ int main(int argc, const char * argv[]) {
     }
     
     //Compute three sum
-    std::vector< std::vector<int> > results = threeSum(nums);
+    std::vector< std::vector<int> > results = three_sum(nums);
     
     //Print results
     print_3sum(results);
